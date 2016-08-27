@@ -4,13 +4,15 @@ apply plugin: 'maven'
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "file://localhost/"+"E:/GitHub/JMvpDemo/aar/")
-            pom.version = '1.0.1'
+            repository(url: "file://" + "E:/GitHub/JMvpDemo/aar/")
+            pom.version = '1.0.2'
             pom.groupId = 'com.soubw.jmvp'
             pom.artifactId = 'JMvp'
         }
     }
 }
+
+
 
 android {
     compileSdkVersion 23
